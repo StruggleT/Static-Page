@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fafafa;
+  /*	height: 3000px;*/
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+  /* 这句话可以出发BFC BFC可以清除浮动,BFC我们后面讲 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+
+.head {
+  height: 100px;
+  background-color: #fff;
+}
+
+/*页面的版心布局*/
+.iner {
+  width: 1100px;
+  /*background-color: pink;*/
+  height: 100px;
+  margin: 0 auto;
+
+}
+
+.pic {
+  float: left;
+}
+
+.dh {
+  float: right;
+}
+
+.dh ul {
+  overflow: hidden;
+}
+
+.dh li {
+  list-style: none;
+  float: left;
+  line-height: 100px;
+}
+
+.dh li a {
+  text-decoration: none;
+  font-size: 13.5px;
+  margin: 0 20px;
+  color: #333;
+}
+
+.dh li a:hover {
+  color: #76adf8;
+}
+
+/*网页的背景图*/
+.bpic {
+  margin-top: 100px;
+  height: 620px;
+  background: url(../images/bpc.png) no-repeat top center;
+  position: relative;
+}
+
+.bpic ul {
+  width: 60px;
+  height: 12px;
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  margin-right: -30px;
+
+}
+
+.bpic ul li {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  list-style: none;
+  float: left;
+  border-radius: 50%;
+
+}
+
+.zhongjian {
+  margin: 0 12px;
+}
+
+/*背景图结束*/
+/*服务业开始*/
+.ser {
+  background-color: #fafafa;
+
+}
+
+.ser1 {
+  width: 1053px;
+  height: 720px;
+  /*	background-color: pink;*/
+  /*text-align: center;*/
+  margin: 64px auto 0px;
+
+}
+
+.serhd {
+  /*width: 1200px;*/
+  height: 100px;
+  /*background-color: pink;*/
+  border-top: 1px solid #ccc;
+  margin: 0 26px;
+}
+
+.serhd h3 {
+  width: 165px;
+  height: 46px;
+  margin: -15px auto 0;
+}
+
+.serhd p {
+
+  width: 837px;
+  font: 12px "微软雅黑";
+  line-height: 25px;
+  margin: 15px auto 0;
+  text-align: center;
+  color: #666;
+}
+
+.serbd {
+  margin-top: 40px;
+  overflow: hidden;
+}
+
+.serbd li {
+  list-style: none;
+  height: 513px;
+  width: 320px;
+  background: #fff;
+  float: left;
+  border: 1px solid #e7e8e9;
+}
+
+.serbd img {
+  margin: 40px 34px;
+  width: 252px;
+  height: 132px;
+}
+
+.serbd h4 {
+  height: 45px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: normal;
+  color: #373737;
+}
+
+.serbd p {
+  color: #666;
+  text-align: center;
+  line-height: 25px;
+  margin: 0 40px;
+}
+
+.serbd a {
+  display: block;
+  width: 150px;
+  height: 38px;
+  text-decoration: none;
+  border: 1px solid #ff9412;
+  text-align: center;
+  line-height: 38px;
+  margin: 30px 84px;
+  color: #ff9412;
+  border-radius: 10px;
+}
+
+.serbd a:hover {
+  color: #fff;
+  background-color: #ff9412;
+}
+
+.yingxiao {
+  margin: 0 40px;
+}
+
+/*服务页结束*/
+/*案例模块开始*/
+.case {
+
+  width: 1053px;
+  height: 330px;
+  border-top: 1px solid #ccc;
+
+  margin: 64px auto 0;
+}
+
+.case h3 {
+  width: 167px;
+  height: 51px;
+  margin: -25px auto 36px;
+}
+
+.case ul {
+  height: 210px;
+}
+
+.case li {
+  width: 342px;
+  height: 210px;
+  float: left;
+  list-style: none;
+  position: relative;
+  /*	overflow: hidden;*/
+}
+
+.case .zhongpic {
+  margin: 0 10px;
+}
+
+.text1 {
+  width: 342px;
+  height: 47px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  line-height: 47px;
+  color: #aaa;
+}
+
+.chenchao {
+  width: 72px;
+  height: 72px;
+  background: url(../images/fadajing.png) no-repeat center center;
+  position: absolute;
+  bottom: 64px;
+  left: 136px;
+  border-radius: 50%;
+  display: none;
+}
+
+.case li:hover .chenchao {
+  display: block;
+  cursor: pointer;
+}
+
+/*案例模块结束*/
+/*媒体模块开始*/
+.medio {
+  background-color: #fafafa;
+  padding-top: 64px;
+}
+
+.medio1 {
+  width: 1053px;
+  height: 539px;
+  /*background-color: pink;*/
+  margin: 0 auto;
+  border-top: 1px solid #ccc;
+}
+
+.medio1 h3 {
+  width: 168px;
+  height: 44px;
+  margin: -20px auto 0;
+}
+
+.medio1 ul {
+  width: 1053px;
+  margin-top: 50px;
+}
+
+.medio1 ul li {
+  width: 230px;
+  height: 81px;
+  list-style: none;
+  float: left;
+  margin: 0 auto;
+  line-height: 81px;
+}
+
+/*媒体模块结束*/
+/*底部导航栏开始*/
+.footer {
+  height: 165px;
+  background-color: #212425;
+  overflow: hidden;
+  margin-top: 100px;
+
+}
+
+.subnav {
+  text-align: center;
+  margin-top: 50px;
+  color: #f0f1f1;
+  font-size: 14px;
+}
+
+.subnav a {
+  color: #f0f1f1;
+  text-decoration: none;
+  padding: 0 5px;
+  font-size: 14px;
+}
+
+.subnav a:hover {
+  color: #2288f6;
+  text-decoration: underline;
+}
+
+.footer p {
+  text-align: center;
+  color: #888888;
+  margin-top: 30px;
+}
+
+
+/*底部导航栏结束*/
